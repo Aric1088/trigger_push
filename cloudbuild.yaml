@@ -1,6 +1,6 @@
 steps:
 - name: 'busybox'
-  args: ['sleep', '3']
+  args: ['sleep', '5']
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/quickstart-image', '.' ]
 images:
