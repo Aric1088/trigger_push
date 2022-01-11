@@ -1,7 +1,22 @@
+substitutions:
+  _RAW_COMMIT_MESSAGE: "$(commit.commit.message)"
+  _ORIGINAL: "$(commit.html_url) ${_RAW_COMMIT_MESSAGE//\n/ } (author: $(commit.author.login))"
+  _WITHOUT_LEFT_PARENTHESIS: "$(commit.html_url) ${_RAW_COMMIT_MESSAGE//\n/ } author: $(commit.author.login))"
+  _WITHOUT_BASH_SUBSTITUTION: "$(commit.html_url) ${_RAW_COMMIT_MESSAGE} (author:$(commit.author.login))"
+  _WITHOUT_BASH_REFERENCE: "$(commit.html_url) foo (author:$(commit.author.login))"
+  _WITH_SURROUNDING_SPACES_TO_PARENTHESIS: "$(commit.html_url) ${_RAW_COMMIT_MESSAGE//\n/ } ( author: $(commit.author.login)  )"
+  _WITH_FULL_WIDTH_PARENTHESIS: "$(commit.html_url) ${_RAW_COMMIT_MESSAGE//\n/ } （author:$(commit.author.login)）"
 steps:
-- name: 'busybox'
-  args: ['sleep', '3']
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/quickstart-image', '.' ]
-images:
-- 'gcr.io/$PROJECT_ID/quickstart-image'
+  - id: debug
+    name: bash
+    entrypoint: 'bash'
+    args:
+    - -c
+    - |
+      echo '$_RAW_COMMIT_MESSAGE'
+      echo '$_ORIGINAL'
+      echo '$_WITHOUT_LEFT_PARENTHESIS'
+      echo '$_WITHOUT_BASH_SUBSTITUTION'
+      echo '$_WITHOUT_BASH_REFERENCE'
+      echo '$_WITH_SURROUNDING_SPACES_TO_PARENTHESIS'
+      echo '$_WITH_FULL_WIDTH_PARENTHESIS'
