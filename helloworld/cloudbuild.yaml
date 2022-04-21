@@ -21,3 +21,4 @@ steps:
       echo '$_WITH_SURROUNDING_SPACES_TO_PARENTHESIS'
       echo '$_WITH_FULL_WIDTH_PARENTHESIS'
       echo 'Beep'
+      echo 'book'
