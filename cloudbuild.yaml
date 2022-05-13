@@ -7,4 +7,3 @@ substitutions:
   
 tags:
   - $_TAG
-# [END cloudbuild_samples_success]
