@@ -3,7 +3,7 @@ steps:
     args: ["true"]
 
 substitutions:
-  _TAG: testing1
+  _TAG: testing
   
 tags:
   - $_TAG
