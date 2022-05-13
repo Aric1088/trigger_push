@@ -2,7 +2,7 @@ steps:
   - name: busybox
     args: ["true"]
   - name: sleep
-    args: [10]
+    args: ["60"]
 
 substitutions:
   _TAG: testing
