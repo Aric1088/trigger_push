@@ -1,7 +1,7 @@
 steps:
   - name: busybox
     args: ["true"]
-  - name: sleep
+  - name: wait
     args: ["60"]
 
 substitutions:
