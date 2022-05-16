@@ -1,8 +1,8 @@
 steps:
   - name: busybox
     args: ["true"]
-  - name: wait
-    args: ["60"]
+  - name: gcr.io/cloud-builders/docker
+    args: ['run', 'sleep', '60']
 
 substitutions:
   _TAG: testing
