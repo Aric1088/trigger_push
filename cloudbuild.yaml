@@ -3,7 +3,7 @@ steps:
     args: ["true"]   
 
 substitutions:
-  _TAG: yes
+  _TAG: yess
   
 tags:
   - $_TAG
