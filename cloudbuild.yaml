@@ -2,8 +2,8 @@ steps:
   - name: busybox
     args: ["true"]   
 
-# substitutions:
-#   _TAG: testing yes
+substitutions:
+  _TAG: testing yes
   
 tags:
   - $_TAG
