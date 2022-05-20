@@ -7,4 +7,5 @@ substitutions:
   
 tags:
   - $_TAG
+  - $LOCATION
   - test
