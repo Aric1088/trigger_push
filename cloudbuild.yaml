@@ -8,4 +8,3 @@ substitutions:
 tags:
   - $_TAG
   - $LOCATION
-  - "testing"
