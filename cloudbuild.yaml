@@ -8,3 +8,4 @@ substitutions:
 tags:
   - $_TAG
   - $LOCATION
+  - "hello"
