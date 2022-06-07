@@ -3,8 +3,9 @@ steps:
     args: ["true"]   
 
 substitutions:
-  _TAG: yess
+  _TAG: testing
   
 tags:
   - $_TAG
   - $LOCATION
+  - something
