@@ -1,6 +1,8 @@
 steps:
   - name: busybox
-    args: ["true"]   
+    args: ["true"]  
+  - name: 'bash'
+    args: ['echo', 'I am running in a private pool!']
 
 substitutions:
   _TAG: testing
@@ -8,3 +10,7 @@ substitutions:
 tags:
   - $_TAG
   - $LOCATION
+
+options:
+  pool:
+    name: 'projects/aricz-test-353219/locations/us-west1/workerPools/aricz-test-pool'
