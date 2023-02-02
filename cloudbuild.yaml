@@ -3,6 +3,9 @@ steps:
     args: ["true"]  
   - name: 'bash'
     args: ['echo']
+  - name: 'bash'
+    args: ['echo']
+
 
 substitutions:
   _TAG: testing
