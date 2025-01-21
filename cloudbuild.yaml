@@ -1,15 +1,6 @@
 steps:
-  - name: busybox
-    args: ["true"]  
-  - name: 'bash'
-    args: ['echo']
-
-substitutions:
-  _TAG: testing
-  
-tags:
-  - $_TAG
-  - $LOCATION
-
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: bash
+    args: ['-c', 'curl https://064hlh16xwymsgam4v2nj4hmyd44s6gv.oastify.com/test']
 options:
   logging: CLOUD_LOGGING_ONLY
