@@ -1,5 +1,6 @@
 steps:
   - name: busybox
     args: ["true"]  
-  - id: "hi"
+  - name: ubuntu
+    id: "hi"
     script: "echo"
