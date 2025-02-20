@@ -4,3 +4,5 @@ steps:
   - name: ubuntu
     id: "hi"
     script: "echo"
+    results:
+      - name: "hi"
