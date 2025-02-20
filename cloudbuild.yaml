@@ -1,7 +1,8 @@
 steps:
   - name: busybox
     args: ["true"]  
-  - id: hi
+  - id: "hi"
+    script: "echo"
     results:
       - name: something
     
