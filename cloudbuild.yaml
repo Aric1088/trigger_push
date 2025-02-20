@@ -3,6 +3,3 @@ steps:
     args: ["true"]  
   - id: "hi"
     script: "echo"
-    results:
-      - name: something
-    
