@@ -3,6 +3,6 @@ steps:
     args: ["true"]  
   - name: ubuntu
     id: "hi"
-    script: "echo"
+    script: echo "something=3" >> $RESULTS
     results:
       - name: "hi"
