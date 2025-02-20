@@ -1,6 +1,6 @@
 steps:
-  - name: busybox
-    args: ["true"]  
+  - name: ubuntu
+    script: echo $RESULTS
   - name: ubuntu
     id: "hi"
     script: echo "something=3" >> $RESULTS
