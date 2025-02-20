@@ -6,3 +6,5 @@ steps:
     script: echo "something=3" >> $RESULTS
     results:
       - name: "hi"
+  - name: ubuntu
+    script: echo $RESULTS
