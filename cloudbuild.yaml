@@ -1,15 +1,7 @@
 steps:
   - name: busybox
     args: ["true"]  
-  - name: 'bash'
-    args: ['echo']
-
-substitutions:
-  _TAG: testing
-  
-tags:
-  - $_TAG
-  - $LOCATION
-
-options:
-  logging: CLOUD_LOGGING_ONLY
+  - id: hi
+    results:
+      - name: something
+    
