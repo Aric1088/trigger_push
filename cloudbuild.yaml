@@ -7,4 +7,4 @@ steps:
     results:
       - name: "hi"
   - name: ubuntu
-    script: echo $RESULTS
+    script: cat $RESULTS
