@@ -3,7 +3,7 @@ steps:
     script: echo $RESULTS
   - name: ubuntu
     id: "hi"
-    script: echo "something=3" >> $RESULTS
+    script: echo "something=3" >> $RESULTS \ cat $RESULTS
     results:
       - name: "hi"
   - name: ubuntu
