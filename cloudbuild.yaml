@@ -9,4 +9,7 @@ steps:
     results:
       - name: "hi"
   - name: ubuntu
-    script: echo $BUILDER_OUTPUT
+    script: |
+      echo "something=5" >> $RESULTS
+      cat $RESULTS
+    
