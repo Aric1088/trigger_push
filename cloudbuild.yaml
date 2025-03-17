@@ -2,7 +2,7 @@ steps:
   - name: ubuntu
     script: echo $RESULTS
   - name: ubuntu
-    id: "hi there"
+    id: "hi"
     script: |
       echo "hello=3" >> $RESULTS
       cat $RESULTS
