@@ -4,7 +4,7 @@ steps:
   - name: ubuntu
     id: "hi"
     script: |
-      echo "hello=s6" >> $RESULTS
+      echo "hello=s6s" >> $RESULTS
       cat $RESULTS
     results:
       - name: "hi"
