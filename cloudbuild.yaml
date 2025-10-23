@@ -3,7 +3,8 @@ steps:
     args: ["true"]  
   - name: 'bash'
     args: ['echo']
-
+  - name: something
+    remote_config: developer-connect:projects/aricz-test-353219/locations/us-central1/connections/l/gitRepositoryLinks/Aric1088-trigger_push@main#step.yaml
 substitutions:
   _TAG: testing
   
