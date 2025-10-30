@@ -1,0 +1,16 @@
+steps:
+  - name: ubuntu
+    script: echo $RESULTS
+  - name: ubuntu
+    id: "hi"
+    script: |
+      echo "hello=s6s" >> $RESULTS
+      cat $RESULTS
+    results:
+      - name: "hi"
+  - name: ubuntu
+    script: |
+      echo "something=5" >> $RESULTS
+      cat $RESULTS
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
