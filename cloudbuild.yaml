@@ -13,5 +13,4 @@ steps:
       echo "something=5" >> $RESULTS
       cat $RESULTS
 options:
-  requested_verify_option: VERIFIED
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
